@@ -36,7 +36,7 @@ const links: LinkItem[] = [
 const Nav: React.FC = () => {
   const pathname = usePathname();
   return (
-    <div className='flex gap-8'>
+    <div className='flex gap-8 '>
       {links.map((link) => (
         <Link
           key={link.id}

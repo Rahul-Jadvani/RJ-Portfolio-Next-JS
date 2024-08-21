@@ -14,7 +14,7 @@ const Header = () => {
         </Link>
 
         {/* Navigation for medium to large screens */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <Nav />
           <Link href="/contact">
             <Buttonui title="Hire Me" />
@@ -22,7 +22,7 @@ const Header = () => {
         </div>
 
         {/* Navigation for small screens */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <SmNav />
         </div>
       </div>
