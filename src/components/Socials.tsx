@@ -16,7 +16,7 @@ const socialLinks: SocialLink[] = [
     {
         id: 1,
         icon: <FaLinkedin />,
-        path: 'www.linkedin.com/in/rahul-jadvani-741751208',
+        path: 'https://linkedin.com/in/rahul-jadvani-741751208',
     },
 ];
 
