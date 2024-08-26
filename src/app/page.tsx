@@ -24,14 +24,14 @@ export default function Home() {
           {/* Call-to-Action Buttons and Social Media Links */}
           <div className="flex flex-col items-center lg:flex-row gap-8">
             {/* Download CV Button */}
-            <Link href="/resume.pdf" passHref> {/* Assuming resume.pdf is in the public directory */}
+            <Link href="/resume/resume.pdf" passHref> 
               <Button
                 variant="ghost"
                 size="sm"
                 className="w-56 h-12 rounded-full bg-none border-2 border-accent hover:bg-accent-hover hover:scale-105 hover:border-accent/10 hover:shadow-accent shadow-inner duration-400 gap-2"
-                aria-label="Download CV"
+                aria-label="Download Resume"
               >
-                <span>Download CV</span> <FiDownload />
+                <span>Download resume</span> <FiDownload />
               </Button>
             </Link>
             {/* Social Media Links */}
