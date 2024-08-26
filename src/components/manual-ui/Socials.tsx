@@ -21,7 +21,7 @@ const socialLinks: SocialLink[] = [
     {
         id: 2,
         icon: <FaXTwitter />,
-        path: '',
+        path: 'https://x.com/__Ray__47?t=-_Xij0TTYx72kRAmU3YAIg&s=09',
     },
 ];
 
