@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import PageTransition from "@/components/PageTransition";  // Updated import path
+import Header from "@/components/manual-ui/Header";
+import PageTransition from "@/components/manual-ui/PageTransition";  // Updated import path
 
 const jetbrains = JetBrains_Mono({
   subsets: ["latin"],

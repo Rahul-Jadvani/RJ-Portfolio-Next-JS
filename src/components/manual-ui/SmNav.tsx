@@ -24,25 +24,29 @@ const SmNav: React.FC = () => {
   const pathname = usePathname();
 
   const handleLinkClick = () => {
-    setIsOpen(false) // Close the sheet when a link is clicked
+    setIsOpen(false); // Close the sheet when a link is clicked
   };
 
   return (
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger className='flex justify-center items-center'>
-        <CiMenuBurger className='text-2xl text-accent' />
+      <SheetTrigger className="flex justify-center items-center">
+        <CiMenuBurger className="text-2xl text-accent cursor-pointer" aria-label="Open Menu" />
       </SheetTrigger>
-      <SheetContent className='flex-col'>
-        <div className='text-4xl flex justify-center items-center mt-40 absolute left-[38%]'>
-          RJ<span className='text-accent-hover'>47</span>
+      <SheetContent className="flex flex-col items-center p-4 bg-primary">
+        {/* Branding */}
+        <div className="text-4xl flex justify-center items-center mt-20">
+          RJ<span className="text-accent-hover">47</span>
         </div>
-        <div className='flex gap-8 flex-col justify-center items-center absolute left-[40%] top-[40%]'>
+        {/* Navigation Links */}
+        <div className="flex flex-col gap-8 justify-center items-center mt-10">
           {links.map((link) => (
             <Link
               key={link.id}
               href={link.path}
-              className={`${link.path === pathname ? 'text-accent border-b-2 border-accent' : ''} capitalize font-medium hover:text-accent transition-all`}
-              onClick={handleLinkClick} // Close the sheet on click
+              className={`${link.path === pathname ? 'text-accent border-b-2 border-accent' : ''
+                } capitalize font-medium hover:text-accent transition-all`}
+              onClick={handleLinkClick}
+              aria-label={`Navigate to ${link.title}`}
             >
               {link.title}
             </Link>

@@ -28,8 +28,8 @@ const PageTransition: React.FC<PageTransitionProps> = ({children}) => {
                             <span className="text-2xl font-extrabold text-accent-hover"> PORTFOLIO</span>
                         </div>
                     </motion.div>
-            </div>
-            {children}
+                    {children}  
+                </div>
             </AnimatePresence>
     );
 };

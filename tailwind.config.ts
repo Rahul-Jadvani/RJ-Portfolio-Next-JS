@@ -19,7 +19,7 @@ const config = {
         "sm": "640px",
         "md": "768px",
         "lg": "960px",
-        "xl": "1350px",
+        "xl": "1400px",
       },
     },
     fontFamily: {
