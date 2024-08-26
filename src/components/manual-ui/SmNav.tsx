@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetTrigger, SheetContent } from '@/components/ui/sheet';
 import { CiMenuBurger } from 'react-icons/ci';
+import Buttonui from '../ui/buttonui';
 
 interface LinkItem {
   id: number;
@@ -51,6 +52,9 @@ const SmNav: React.FC = () => {
               {link.title}
             </Link>
           ))}
+          <Link href="/contact">
+            <Buttonui title="Hire Me" />
+          </Link>
         </div>
       </SheetContent>
     </Sheet>
