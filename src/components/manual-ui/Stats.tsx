@@ -52,7 +52,7 @@ const Stats: React.FC = () => {
               />
               <p
                 className={`${stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  }text-white/80 text-justify tracking-tight lg:text-left mr-1`}
+                  }text-white/80 text-justify lg:text-left mr-1 text-sm`}
               >
                 {stat.text}
               </p>
