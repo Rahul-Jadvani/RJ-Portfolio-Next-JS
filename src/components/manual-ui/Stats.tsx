@@ -40,7 +40,7 @@ const Stats: React.FC = () => {
           {statValues.map((stat) => (
             <div
               key={stat.id}
-              className="flex-1 flex items-center lg:items-start justify-center lg:justify-start gap-4 lg:gap-4 lg:mt-10"
+              className="flex-1 flex items-center lg:items-start justify-center lg:justify-start gap-2 lg:gap-4 lg:mt-10"
             >
               {/* CountUp with aria-label for accessibility */}
               <CountUp
