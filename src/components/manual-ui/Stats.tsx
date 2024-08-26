@@ -47,7 +47,7 @@ const Stats: React.FC = () => {
                 end={stat.num}
                 duration={5}
                 delay={2}
-                className="text-4xl lg:text-6xl font-extrabold"
+                className="text-3xl lg:text-6xl font-extrabold"
                 aria-label={`${stat.num} ${stat.text}`}
               />
               <p
