@@ -100,12 +100,12 @@ const education = {
     {
       ins: "Dayananda Sagar University",
       degree: 'B.Tech in CSE',
-      duration: '2020-2026'
+      duration: '2022-2026'
     },
     {
       ins: "100xDevs",
       degree: 'Full Stack Developer',
-      duration: '2024'
+      duration: '2023-2024'
     },
   ]
 }
