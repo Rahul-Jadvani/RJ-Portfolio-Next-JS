@@ -14,10 +14,31 @@ interface LinkItem {
 }
 
 const links: LinkItem[] = [
-  { id: 0, title: 'Home', path: '/' },
-  { id: 1, title: 'Services', path: '/services' },
-  { id: 2, title: 'Projects', path: '/projects' },
-  { id: 3, title: 'Contact', path: '/contact' },
+  {
+    id: 0,
+    title: 'Home',
+    path: '/',
+  },
+  {
+    id: 1,
+    title: 'Services',
+    path: '/services',
+  },
+  {
+    id: 2,
+    title: 'Resume',
+    path: '/resume',
+  },
+  {
+    id: 3,
+    title: 'Projects',
+    path: '/projects',
+  },
+  {
+    id: 4,
+    title: 'Contact',
+    path: '/contact',
+  },
 ];
 
 const SmNav: React.FC = () => {

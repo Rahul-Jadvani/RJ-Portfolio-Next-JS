@@ -23,11 +23,16 @@ const links: LinkItem[] = [
   },
   {
     id: 2,
+    title: 'Resume',
+    path: '/resume',
+  },
+  {
+    id: 3,
     title: 'Projects',
     path: '/projects',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Contact',
     path: '/contact',
   },

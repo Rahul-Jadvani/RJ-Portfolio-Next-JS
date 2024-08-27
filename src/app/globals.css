@@ -8,3 +8,16 @@
     }
 }
 
+.text-outline{
+    -webkit-text-stroke: 1px #10a0de;
+}
+
+.text-outline-hover {
+    -webkit-text-stroke: 1px #5964f6;
+}
+
+.bblur{
+        box-shadow: 0 8px 24px 0 rgba(6, 100, 240, 0.37);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(4px);
+}

@@ -40,7 +40,7 @@ const Stats: React.FC = () => {
           {statValues.map((stat) => (
             <div
               key={stat.id}
-              className="flex-1 flex items-center lg:items-start justify-center lg:justify-start gap-3 lg:gap-4 lg:mt-10"
+              className="flex-1 flex justify-center items-center gap-3 lg:gap-4 lg:mt-10"
             >
               {/* CountUp with aria-label for accessibility */}
               <CountUp
@@ -52,7 +52,7 @@ const Stats: React.FC = () => {
               />
               <p
                 className={`${stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
-                  }text-white/80 text-left mr-1 text-sm`}
+                  }text-white/80 text-left mr-1 text-sm lg:text-md`}
               >
                 {stat.text}
               </p>
