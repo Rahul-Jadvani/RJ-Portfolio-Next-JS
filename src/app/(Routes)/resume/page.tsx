@@ -6,7 +6,31 @@ import { SiTailwindcss, SiTypescript, SiNextdotjs, SiExpress, SiRecoil } from 'r
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { motion } from 'framer-motion' 
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
+
+export function Example() {
+  return (
+    <Carousel
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+    >
+      // ...
+    </Carousel>
+  )
+}
+
+import { motion } from 'framer-motion'
 
 
 const experience = {
@@ -100,12 +124,12 @@ const education = {
     {
       ins: "Dayananda Sagar University",
       degree: 'B.Tech in CSE',
-      duration: '2020-2026'
+      duration: '2022-2026'
     },
     {
       ins: "100xDevs",
       degree: 'Full Stack Developer',
-      duration: '2024'
+      duration: '2023-2024'
     },
   ]
 }
@@ -184,9 +208,86 @@ const Resume: React.FC = () => {
             <TabsTrigger value="Skills">Skills</TabsTrigger>
           </TabsList>
 
-          <div className="min-h-[70vh] w-full">
+          <div className="lg:min-h-[70vh] w-full">
             <TabsContent value="About" className='h-full w-full'>
-              {/* About Me content goes here */}
+              <div className="flex flex-col gap-[30px] text-center xl:text-justify items-center justify-center">
+                <h3 className="text-4xl font-bold text-center">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40">
+                  {about.desc}
+                </p>
+                <Carousel
+                  plugins={[
+                    Autoplay({
+                      delay: 2500,
+                    }),
+                  ]}
+                  opts={{
+                    align: "start",
+                    loop:true
+                  }}
+                  orientation="vertical"
+                  className="w-full max-w-md mt-16 flex justify-center items-center lg:hidden"
+                >
+                  <CarouselContent className="h-[160px]">
+                    {about.info.map((item) => (
+                      <CarouselItem key={item.fieldName} className="w-[300px]">
+                        <Card className="h-[142px]">
+                          {/* Content inside card */}
+                          <CardHeader className='flex flex-col items-center justify-center gap-6 group'>
+                            <CardTitle>
+                              <h3 className='font-extrabold text-accent'>{item.fieldName}</h3>
+                            </CardTitle>
+                            <CardDescription>
+                              <p className='text-[1.1rem] font-bold group-hover:text-white'>{item.fieldValue}</p>
+                            </CardDescription>
+                          </CardHeader>
+                        </Card>
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+
+                {/* Larger screen carousel */}
+                <Carousel
+                  plugins={[
+                    Autoplay({
+                      delay: 2500,
+                    }),
+                  ]}
+                  opts={{
+                    align: "start",
+                    loop: true,
+                  }}
+                  className="hidden lg:flex items-center justify-center max-w-2xl lg:mt-40"
+                >
+                  <CarouselContent>
+                    {
+                      about.info.map((item) => {
+                        return (
+                          <CarouselItem key={item.fieldName} className='pl-6 basis-1/2 w-[84px]'>
+                            <Card className='h-[160px]'>
+                              <CardHeader className='flex flex-col items-center justify-center gap-6 group'>
+                                <CardTitle>
+                                  <h3 className='font-extrabold text-accent'>{item.fieldName}</h3>
+                                </CardTitle>
+                                <CardDescription>
+                                  <p className='text-[1.1rem] font-bold group-hover:text-white'>{item.fieldValue}</p>
+                                </CardDescription>
+                              </CardHeader>
+                            </Card>
+                          </CarouselItem>
+                        )
+                      })
+                    }
+                  </CarouselContent>
+                  <CarouselPrevious />
+                  <CarouselNext />
+                </Carousel>
+
+              </div>
+              
             </TabsContent>
 
             <TabsContent value="Education" className='h-full w-full'>
@@ -245,7 +346,7 @@ const Resume: React.FC = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                 <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                   <h3 className='text-4xl font-bold text-center'>{skills.title}</h3>
-                  <p className='max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40'>{ skills.desc}</p>
+                  <p className='max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40'>{skills.desc}</p>
                 </div>
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg: gap-4 lg:gap-8'>
                   {skills.skillList.map((skill) => {
@@ -267,7 +368,7 @@ const Resume: React.FC = () => {
                             </div>
                           </Tooltip>
                         </TooltipProvider>
-                      </li>                      
+                      </li>
                     )
                   })}
                 </ul>

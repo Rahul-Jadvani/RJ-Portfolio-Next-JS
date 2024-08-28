@@ -49,7 +49,7 @@ const Photo: FC = () => {
                         initial={{ strokeDasharray: '24 10 0 0' }}
                         animate={{
                             strokeDasharray: ['15 120 25 25', '11 25 92 72', '6 250 22 22'],
-                            transform: 'rotate(360deg)'
+                            rotate:[90,360]
                         }}
                         transition={{ duration: 20, repeat: Infinity, repeatType: 'mirror' }}
                     />
