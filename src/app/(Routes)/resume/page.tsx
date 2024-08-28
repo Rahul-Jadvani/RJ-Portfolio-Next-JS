@@ -223,7 +223,7 @@ const Resume: React.FC = () => {
                   ]}
                   opts={{
                     align: "start",
-                    loop:true
+                    loop: true
                   }}
                   orientation="vertical"
                   className="w-full max-w-md mt-16 flex justify-center items-center lg:hidden"
@@ -287,7 +287,7 @@ const Resume: React.FC = () => {
                 </Carousel>
 
               </div>
-              
+
             </TabsContent>
 
             <TabsContent value="Education" className='h-full w-full'>
