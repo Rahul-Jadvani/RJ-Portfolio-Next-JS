@@ -73,7 +73,7 @@ const SmNav: React.FC = () => {
               {link.title}
             </Link>
           ))}
-          <Link href="/contact">
+          <Link href="/contact" onClick={handleLinkClick}>
             <Buttonui title="Hire Me" />
           </Link>
         </div>
