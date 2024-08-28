@@ -360,8 +360,9 @@ const Resume: React.FC = () => {
                           <Tooltip>
                             <div className='group'>
                               <TooltipTrigger className='w-full h-[152px] bg-slate-900/90 rounded-xl flex justify-center items-center group-hover:text-accent-hover group-hover:bg-primary group-hover:border-accent group-hover:border-2 group-hover:shadow-inner group-hover:shadow-accent-hover transition-all duration-300 hover:scale-110'>
-                                <div className='text-6xl'>
+                                <div className='text-6xl flex items-center justify-center flex-col'>
                                   {skill.icon}
+                                  <p className='text-xs mt-6'>{skill.name}</p>
                                 </div>
                               </TooltipTrigger>
                               <TooltipContent>
