@@ -77,7 +77,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "+91 6362050449"
+      fieldValue: "+91 6362-050-449"
     },
     {
       fieldName: "experience",
