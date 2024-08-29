@@ -49,7 +49,7 @@ const projectData: Project[] = [
       { name: "Weather API" },
     ],
     img: "/assets/prjx/weather.png",
-    live: "weather-app-sigma-lyart-21.vercel.app",
+    live: "https://weather-app-sigma-lyart-21.vercel.app",
     github: "https://github.com/Rahul-Jadvani/weather-app.git",
   },
 ];
