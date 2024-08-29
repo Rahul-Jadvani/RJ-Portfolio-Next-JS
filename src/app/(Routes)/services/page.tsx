@@ -35,7 +35,7 @@ const services: Service[] = [
   {
     num: "04",
     title: "Project Management",
-    des: "I manage projects with careful planning, resource allocation, and team collaboration. Using tools like Linear, I ensure projects are delivered on time and efficiently.",
+    des: "I manage projects with careful planning, and team collaboration. Using tools like Linear, I ensure projects are delivered on time and efficiently.",
     href: "",
   },
 ];
