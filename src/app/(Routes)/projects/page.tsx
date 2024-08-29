@@ -39,18 +39,18 @@ const projectData: Project[] = [
   },
   {
     num: "02",
-    category: "MERN Stack",
-    title: "Payments App",
-    desc: "This is a full-stack payment application built using Node.js, Express.js, React, and MongoDB. The app is designed to provide secure financial transactions with a user-friendly interface.",
+    category: "FrontEnd",
+    title: "Live Weather App Using API",
+    desc: "A simple and intuitive web app that provides approximate live weather updates. It utilizes a weather API to display current conditions for any location. Stay informed about the weather with real-time information at your fingertips.",
     stack: [
-      { name: "React JS" },
-      { name: "Mongo DB" },
-      { name: "Node JS" },
-      { name: "Express JS" },
+      { name: "HTML" },
+      { name: "CSS" },
+      { name: "JavaScript" },
+      { name: "Weather API" },
     ],
-    img: "/assets/prjx/paytm.png",
-    live: "https://payments-app-using-mern.vercel.app",
-    github: "https://github.com/Rahul-Jadvani/Payments-App.git",
+    img: "/assets/prjx/weather.png",
+    live: "weather-app-sigma-lyart-21.vercel.app",
+    github: "https://github.com/Rahul-Jadvani/weather-app.git",
   },
 ];
 
@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
               <p className="text-white/60">{project.desc}</p>
               <ul className="flex gap-4">
                 {project.stack.map((p, i) => (
-                  <li key={p.name} className="text-lg text-accent">
+                  <li key={p.name} className="text-md text-accent">
                     {p.name}
                     {i !== project.stack.length - 1 && ","}
                   </li>
