@@ -217,7 +217,7 @@ const Resume: React.FC = () => {
             <TabsContent value="About" className='h-full w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-justify items-center justify-center">
                 <h3 className="text-4xl font-bold text-center">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40">
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-36">
                   {about.desc}
                 </p>
                 <Carousel
@@ -297,7 +297,7 @@ const Resume: React.FC = () => {
             <TabsContent value="Education" className='h-full w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                 <h3 className="text-4xl font-bold text-center">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40">
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-36">
                   {education.desc}
                 </p>
                 <ScrollArea className="h-[400px] ">
@@ -323,7 +323,7 @@ const Resume: React.FC = () => {
             <TabsContent value="Experience" className='h-full w-full'>
               <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                 <h3 className="text-4xl font-bold text-center">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40">
+                <p className="max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-36">
                   {experience.desc}
                 </p>
                 <ScrollArea className="h-[400px] ">
@@ -350,7 +350,7 @@ const Resume: React.FC = () => {
               <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                 <div className="flex flex-col gap-[30px] text-center xl:text-justify">
                   <h3 className='text-4xl font-bold text-center'>{skills.title}</h3>
-                  <p className='max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-40'>{skills.desc}</p>
+                  <p className='max-w-[600px] text-white/60 mx-auto lg:mx-0 tracking-tight text-base mb-6 lg:mb-4 xl:ml-36'>{skills.desc}</p>
                 </div>
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg: gap-4 lg:gap-8'>
                   {skills.skillList.map((skill) => {
