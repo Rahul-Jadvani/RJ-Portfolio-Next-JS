@@ -12,14 +12,7 @@ const GlobeContact = dynamic(() => import('@/components/ui/globe-contact'), {
 
 const Photo: FC = () => (
   <div className="relative w-full h-full flex justify-center items-center">
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 1.2, duration: 0.6, ease: "easeInOut" },
-      }}
-      className="relative"
-    >
+    
       {/* Circle container with Globe inside */}
       <div className="relative w-[300px] lg:w-[496px] h-[270px] lg:h-[496px] mb-10 lg:mb-0">
         {/* Globe inside the circle */}
@@ -40,7 +33,7 @@ const Photo: FC = () => (
 
 
         <motion.svg
-          className="relative w-[300px] lg:w-[506px] h-[300px] lg:h-[506px] mb-10 lg:mb-0"
+          className="-z-10 relative w-[300px] lg:w-[506px] h-[300px] lg:h-[506px] mb-10 lg:mb-0"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +60,6 @@ const Photo: FC = () => (
           />
         </motion.svg>
       </div>
-    </motion.div>
   </div>
 );
 

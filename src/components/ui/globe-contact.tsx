@@ -24,7 +24,7 @@ export default function GlobeContact() {
     directionalLeftLight: "#ffffff",
     directionalTopLight: "#ffffff",
     pointLight: "#ffffff",
-    arcTime: 1000,
+    arcTime: 500,
     arcLength: 0.9,
     rings: 1,
     maxRings: 3,
