@@ -59,7 +59,7 @@ const services: Service[] = [
   {
     num: "08",
     title: "SaaS Product Development",
-    des: "I architect and launch SaaS products with a focus on modularity, user acquisition, and cloud-native performance, leveraging AWS, Vercel, and scalable microservices.",
+    des: "I architect and launch SaaS products with a focus on modularity, user acquisition, and cloud-native performance, leveraging AWS, and scalable microservices.",
     href: "",
   },
 ];
