@@ -202,8 +202,7 @@ const Resume: React.FC = () => {
         opacity: 1,
         transition: { delay: 1.6, duration: 0.6, ease: "easeIn" }
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0"
-    >
+      className="min-h-[80vh] flex items-center justify-center py-12 lg:py-0" >
       <div className="container mx-auto">
         <Tabs defaultValue="About" className="flex flex-col lg:flex-row gap-[60px]">
           <TabsList className="flex flex-col w-full max-w-[380px] h-[300px] mx-auto lg:mx-0 gap-6">

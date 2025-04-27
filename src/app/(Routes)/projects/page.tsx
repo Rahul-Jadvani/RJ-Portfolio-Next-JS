@@ -24,35 +24,50 @@ type Project = {
 const projectData: Project[] = [
   {
     num: "01",
-    category: "MERN Stack",
-    title: "Payments App",
-    desc: "This is a full-stack payment application built using Node.js, Express.js, React, and MongoDB. The app is designed to provide secure financial transactions with a user-friendly interface.",
+    category: "Full Stack | Blockchain + AI",
+    title: "Feed-Forward",
+    desc: "FeedForward is a blockchain-powered food donation platform that connects surplus food providers with those in need. Using AI-driven insights, smart contracts, and real-time notifications, it streamlines food distribution, minimizes waste, and rewards participation with tokenized incentives.",
     stack: [
-      { name: "React JS" },
-      { name: "Mongo DB" },
-      { name: "Node JS" },
-      { name: "Express JS" },
+      { name: "Next.js 14+" },
+      { name: "React 18" },
+      { name: "TailwindCSS" },
+      { name: "Recharts" },
+      { name: "Three.js" },
+      { name: "React Three Fiber" },
+      { name: "@react-google-maps/api" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "PostgreSQL" },
+      { name: "JWT Authentication" },
+      { name: "Ethereum/Polygon (Planned)" },
     ],
-    img: "/assets/prjx/paytm.png",
-    live: "https://payments-app-using-mern.vercel.app",
-    github: "https://github.com/Rahul-Jadvani/Payments-App.git",
+    img: "/assets/prjx/FF.png",
+    live: "https://feed-forward-one.vercel.app/",
+    github: "https://github.com/Rahul-Jadvani/FeedForward",
   },
   {
     num: "02",
-    category: "FrontEnd",
-    title: "Live Weather App Using API",
-    desc: "A simple and intuitive web app that provides approximate live weather updates. It utilizes a weather API to display current conditions for any location. Stay informed about the weather with real-time information at your fingertips.",
+    category: "Frontend | Web3 + Blockchain",
+    title: "VYB-R8R",
+    desc: "VYB-R8R is a Web3-powered frontend application designed for seamless blockchain interaction. Built with Next.js, React, and cutting-edge Web3 tools like Wagmi, RainbowKit, and CoreBTC, it delivers a smooth and intuitive decentralized experience.",
     stack: [
-      { name: "HTML" },
-      { name: "CSS" },
-      { name: "JavaScript" },
-      { name: "Weather API" },
+      { name: "React.js" },
+      { name: "TailwindCSS" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "CoreBTC" },
+      { name: "Solidity" },
+      { name: "Wagmi" },
+      { name: "RainbowKit" },
+      { name: "Ethers.js" },
+      { name: "Web3.js" },
     ],
-    img: "/assets/prjx/weather.png",
-    live: "https://weather-app-sigma-lyart-21.vercel.app",
-    github: "https://github.com/Rahul-Jadvani/weather-app.git",
+    img: "/assets/prjx/VYB.png",
+    live: "https://vyb-r8r.vercel.app/",
+    github: "https://github.com/Rahul-Jadvani/VYB-R8R",
   },
 ];
+
 
 const Projects: React.FC = () => {
   const [project, setProject] = useState<Project>(projectData[0]);
@@ -81,7 +96,7 @@ const Projects: React.FC = () => {
               <p className="text-white/60">{project.desc}</p>
               <ul className="flex gap-4">
                 {project.stack.map((p, i) => (
-                  <li key={p.name} className="text-md text-accent">
+                  <li key={p.name} className="text-sm text-accent">
                     {p.name}
                     {i !== project.stack.length - 1 && ","}
                   </li>
@@ -125,7 +140,7 @@ const Projects: React.FC = () => {
             <Swiper spaceBetween={30} slidesPerView={1} className="lg:h-[560px] mb-12" onSlideChange={handleSlideChange}>
               {projectData.map((p) => (
                 <SwiperSlide key={p.num} className="w-full">
-                  <div className="h-[500px] relative group flex justify-center items-center bg-slate-900/90">
+                  <div className="h-[400px] w-[600px] relative group flex justify-center items-center bg-slate-900/90">
                     <div className="absolute top-0 bottom-0 w-full h-full bg-black/5 z-10"></div>
                     <div className="relative w-full h-full">
                       <Image src={p.img} fill className="object-cover" alt="photo" priority quality={100}/>

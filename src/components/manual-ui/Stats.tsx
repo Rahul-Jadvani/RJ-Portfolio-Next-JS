@@ -17,17 +17,17 @@ const statValues: Stat[] = [
   },
   {
     id: 1,
-    num: 18,
+    num: 38,
     text: "Projects Worked On",
   },
   {
     id: 2,
-    num: 25,
+    num: 28,
     text: "Techs/Skills mastered",
   },
   {
     id: 3,
-    num: 27,
+    num: 327,
     text: "Code Commits on GitHub",
   },
 ];
