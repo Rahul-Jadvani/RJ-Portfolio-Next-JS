@@ -21,3 +21,15 @@
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(4px);
 }
+
+/*hide scrollbar*/
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+/*hide scrollbar*/

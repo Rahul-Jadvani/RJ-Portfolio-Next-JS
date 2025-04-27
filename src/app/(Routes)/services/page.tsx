@@ -94,7 +94,7 @@ const Services: React.FC = () => {
                 {service.title}
               </h2>
               <p className="text-white">{service.des}</p>
-              <div className="border-b border-accent-hover w-full"></div>
+              <div className="border-b border-accent-hover w-full mb-8"></div>
             </div>
           ))}
         </motion.div>
