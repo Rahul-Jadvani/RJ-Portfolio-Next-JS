@@ -17,28 +17,53 @@ const services: Service[] = [
   {
     num: "01",
     title: "Web Development",
-    des: "I create responsive, scalable websites using Tailwind CSS, TypeScript, React.js, and Next.js. My focus is on performance and accessibility for a great user experience.",
+    des: "I create responsive, scalable websites using Tailwind CSS, TypeScript, React.js, and Next.js. My focus is on performance, accessibility, and seamless user experiences.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
-    des: "I design visually appealing interfaces using tools like Figma and Wix Studio. My designs focus on UX/UI principles to enhance user engagement and align with client branding.",
+    des: "I design visually engaging interfaces with Figma and Wix Studio, focusing on user-centered design principles to boost engagement and align with brand goals.",
     href: "",
   },
   {
     num: "03",
     title: "Custom Software Development",
-    des: "I build custom software solutions tailored to client needs using the MERN stack. My approach ensures scalable, reliable applications that meet business goals.",
+    des: "I develop bespoke software solutions using the MERN stack and serverless architectures, ensuring reliability, scalability, and a perfect fit for business needs.",
     href: "",
   },
   {
     num: "04",
     title: "Project Management",
-    des: "I manage projects with careful planning, and team collaboration. Using tools like Linear, I ensure projects are delivered on time and efficiently.",
+    des: "I lead projects with strategic planning, agile methodologies, and collaboration tools like Linear, ensuring high efficiency, transparency, and timely delivery.",
+    href: "",
+  },
+  {
+    num: "05",
+    title: "Blockchain & Web3 Solutions",
+    des: "I create decentralized applications (dApps), smart contracts, and token economies using Solidity, Hardhat, and Polygon, ensuring security, scalability, and transparency.",
+    href: "",
+  },
+  {
+    num: "06",
+    title: "AI & Data Science",
+    des: "I build AI models for real-world impact using TensorFlow, scikit-learn, and custom data pipelines, specializing in predictive analytics, automation, and recommendation systems.",
+    href: "",
+  },
+  {
+    num: "07",
+    title: "Gamification & Community Platforms",
+    des: "I design engaging community ecosystems with leaderboards, reward systems, and DAO governance, boosting user participation and platform growth.",
+    href: "",
+  },
+  {
+    num: "08",
+    title: "SaaS Product Development",
+    des: "I architect and launch SaaS products with a focus on modularity, user acquisition, and cloud-native performance, leveraging AWS, Vercel, and scalable microservices.",
     href: "",
   },
 ];
+
 
 const Services: React.FC = () => {
   return (
