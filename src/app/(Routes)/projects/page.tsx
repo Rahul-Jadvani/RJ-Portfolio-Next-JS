@@ -78,11 +78,6 @@ const Projects: React.FC = () => {
   };
 
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition:{delay:1.6, duration: 0.6, ease:'easeInOut'} }}
-      className="min-h-[80vh] flex flex-col justify-center py-12 lg:px-0"
-    >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:gap-[16px]">
           <div className="w-full lg:w-[50%] lg:h-[500px] flex flex-col lg:justify-between order-2 lg:order-none">
@@ -152,8 +147,7 @@ const Projects: React.FC = () => {
             </Swiper>
           </div>
         </div>
-      </div>
-    </motion.section>
+    </div>
   );
 };
 
