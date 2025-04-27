@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 import React from "react";
+import GlobeContact from "@/components/ui/globe-contact";
 
 // Define a type for the contact information
 type ContactInfo = {
@@ -35,11 +36,6 @@ const info: ContactInfo[] = [
 
 const Contact: React.FC = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { delay: 1.6, duration: 0.6, ease: "easeInOut" } }}
-      className="py-6"
-    >
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-[36px]">
           <div className="xl:h-[54%] order-2 lg:order-none">
@@ -95,7 +91,6 @@ const Contact: React.FC = () => {
           </div>
         </div>
       </div>
-    </motion.section>
   );
 };
 
